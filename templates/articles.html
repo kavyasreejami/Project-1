@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stored Articles</title>
+</head>
+<body>
+    <h1>Stored Articles</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Article Text</th>
+            <th>Entities</th>
+            <th>Sentiment</th>
+            <th>Sentiment Scores</th>
+        </tr>
+        {% for article in articles %}
+        <tr>
+            <td>{{ article[0] }}</td>
+            <td>{{ article[1] }}</td>
+            <td>{{ article[2] }}</td>
+            <td>{{ article[3] }}</td>
+            <td>{{ article[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

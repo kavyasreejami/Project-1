@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Article NER and Sentiment Analysis</title>
+    <style>
+        body {
+            background-color: #e9ecef; /* Light grey background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 75%; /* Set the container width to 75% of the viewport */
+            margin: 50px auto; /* Center the container */
+            padding: 20px;
+            background-color: #ffffff; /* White background for the container */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #343a40; /* Dark grey for the heading */
+            font-size: 2.5em; /* Adjust font size */
+        }
+        
+        input[type="text"], input[type="submit"] {
+            width: 50% auto;
+            
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ced4da; /* Light border */
+            border-radius: 5px;
+            font-size: 1em; /* Adjust font size */
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff; /* Bootstrap primary color */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 5px;
+            padding-right: 1px;
+            margin-right: 100px; /* Remove margin to align properly */
+            border: 1px solid #ced4da; /* Light border */
+            border-radius: 5px;
+            resize: vertical;
+            font-size: 1em; /* Adjust font size */
+            background-color: #f8f9fa; /* Light background for textareas */
+            height: 200px; /* Set a fixed height for textareas */
+        }
+        
+        .content-container {
+            display: flex; /* Use flexbox to arrange boxes side by side */
+            justify-content: space-between; /* Space between boxes */
+            margin-top: 20px; /* Add margin for spacing */
+        }
+        
+        .box {
+            width: 48%; /* Set width of each box to 48% */
+            padding: 20px;
+            border: 1px solid #dee2e6; /* Light border */
+            border-radius: 5px;
+            margin: 5px;
+            background-color: #f1f3f5; /* Light grey background for boxes */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #495057; /* Darker grey for section headings */
+            font-size: 1.5em; /* Adjust font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>News Article NER and Sentiment Analysis</h1>
+        <form method="POST">
+            <label for="url">Enter Article URL:</label><br>
+            <input type="text" id="url" name="url" required>
+            <input type="submit" value="Fetch Article">
+        </form>
+
+        <div class="content-container">
+            <div class="box">
+                <h2>Extracted Entities</h2>
+                <textarea readonly>{{ entities }}</textarea>
+            </div>
+            <div class="box">
+                <h2>Sentiment Analysis</h2>
+                <textarea readonly>{{ sentiment_result }}</textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

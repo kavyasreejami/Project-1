@@ -1,0 +1,69 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 75%; /* Set the container width to 75% of the viewport */
+  margin: 50px auto; /* Center the container */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2em; /* Adjust font size */
+}
+
+input[type="text"], input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 1em; /* Adjust font size */
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  resize: vertical;
+  font-size: 1em; /* Adjust font size */
+}
+
+.content-container {
+  display: flex; /* Use flexbox to arrange boxes side by side */
+  justify-content: space-between; /* Space between boxes */
+}
+
+.box {
+  width: 48%; /* Set width of each box to 48% */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
