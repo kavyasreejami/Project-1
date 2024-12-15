@@ -31,5 +31,7 @@ Sentiment Analysis is applied to determine the article's sentiment.
 The results are stored in the SQLite database and displayed on the CLI.
 ![Screenshot 2024-12-15 232005](https://github.com/user-attachments/assets/96ba8298-4862-4d27-b6be-f23b942fc4a3)
 
+![Screenshot 2024-12-15 231759](https://github.com/user-attachments/assets/4a6499fc-4718-44fc-8c36-4549d2abc543)
+
 
 
