@@ -1,3 +1,3 @@
-# **Project-1**
+# **NewsPulse: Web Scraping & Analysis System**
 
 
