@@ -29,3 +29,8 @@ Article body content
 Named Entity Recognition (NER) is performed to identify relevant entities.
 Sentiment Analysis is applied to determine the article's sentiment.
 The results are stored in the SQLite database and displayed on the CLI.
+![Screenshot 2024-12-15 231759](https://github.com/user-attachments/assets/95b45f65-a71a-453c-9081-b5a8d6d2da9a)
+![Screenshot 2024-12-15 232005](https://github.com/user-attachments/assets/e9e3e8f9-9153-4efc-aa1c-a541f40f82db)
+
+
+
